@@ -1,8 +1,13 @@
 import Link from "next/link";
-import { BookOpen } from "lucide-react";
+import { ArrowDown, BookOpen } from "lucide-react";
 import Image from "next/image";
 
 export function Footer() {
+  const appStoreUrl =
+    process.env.NEXT_PUBLIC_APPSTORE_URL || "https://apps.apple.com";
+  const playStoreUrl =
+    process.env.NEXT_PUBLIC_PLAYSTORE_URL || "https://play.google.com";
+  const webUrl = "https://praywrite.decoletech.com";
   return (
     <footer className='border-t border-border/40 bg-muted/30'>
       <div className='container mx-auto px-4 py-12'>
@@ -53,14 +58,36 @@ export function Footer() {
                 </Link>
               </li>
               <li>
-                <a
-                  href='https://praywrite.decoletech.com'
-                  target='_blank'
-                  rel='noopener noreferrer'
-                  className='text-muted-foreground hover:text-foreground transition-colors'
-                >
-                  Get the App
-                </a>
+                <h5 className='text-muted-foreground hover:text-foreground transition-colors flex items-center gap-4'>
+                  Get the app
+                </h5>
+
+                <div className='flex items-center gap-1.5'>
+                  <a
+                    href={appStoreUrl}
+                    target='_blank'
+                    rel='noopener noreferrer'
+                    className='transition-opacity hover:opacity-80'
+                  >
+                    <img
+                      src='https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83&amp;releaseDate=1448841600'
+                      alt='Download on the App Store'
+                      className='h-8'
+                    />
+                  </a>
+                  <a
+                    href={playStoreUrl}
+                    target='_blank'
+                    rel='noopener noreferrer'
+                    className='transition-opacity hover:opacity-80'
+                  >
+                    <img
+                      src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png'
+                      alt='Get it on Google Play'
+                      className='h-[46px]'
+                    />
+                  </a>
+                </div>
               </li>
             </ul>
           </div>

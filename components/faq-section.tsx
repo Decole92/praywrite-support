@@ -14,19 +14,20 @@ const faqs = [
   {
     question: "Is my data secure and private?",
     answer:
-      "Absolutely. All your journal entries are encrypted and stored securely. We take your privacy seriously and never share your personal information or journal content with third parties.",
+      "Absolutely. Your journal entries are fully encrypted and stored securely. We use end-to-end encryption, which means your data is encrypted on your device before it’s sent to our servers. Only you can access your entries—we never see, share, or sell your personal information or journal content.",
   },
   {
     question: "Can I sync my journal across multiple devices?",
     answer:
-      "Yes! Praywrite Journal uses iCloud to seamlessly sync your entries across all your Apple devices. Simply sign in with the same Apple ID on each device.",
+      "Yes! Praywrite Journal syncs your entries across all your devices, including Apple and Android phones. Just sign in with the same email or Apple ID and enter your encryption PIN, and your journal will stay up to date everywhere.",
   },
 
-  // {
-  //   question: "Can I export my journal entries?",
-  //   answer:
-  //     "Yes, you can export your journal entries as PDF or text files. Go to Settings > Export to choose your preferred format and date range.",
-  // },
+  {
+    question: "Can I export my journal entries?",
+    answer:
+      "Currently, journal entries can’t be exported as PDF or text files. This is to help protect your privacy. However, you can still share individual entries with others using the Share button whenever you choose.",
+  },
+
   {
     question: "Is there a subscription fee?",
     answer:
