@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { ArrowDown, BookOpen } from "lucide-react";
 import Image from "next/image";
+import { FollowUs } from "./followUs";
 
 export function Footer() {
   const appStoreUrl =
@@ -12,7 +13,7 @@ export function Footer() {
     <footer className='border-t border-border/40 bg-muted/30'>
       <div className='container mx-auto px-4 py-12'>
         <div className='grid gap-8 md:grid-cols-4'>
-          <div className='md:col-span-2'>
+          <div className='md:col-span-2 '>
             <Link href='/' className='flex items-center gap-2 mb-4'>
               <div className='flex h-9 w-9 items-center justify-center rounded-lg bg-white'>
                 <Image
@@ -28,6 +29,8 @@ export function Footer() {
               A peaceful space for your prayers, reflections, and spiritual
               growth. Available on iOS.
             </p>
+
+            <FollowUs />
           </div>
 
           <div>

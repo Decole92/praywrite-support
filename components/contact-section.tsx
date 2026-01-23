@@ -15,6 +15,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { Mail, MessageSquare } from "lucide-react";
+import { FollowUs } from "./followUs";
 
 export function ContactSection() {
   const [formData, setFormData] = useState({
@@ -58,7 +59,7 @@ export function ContactSection() {
   };
 
   const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
   ) => {
     setFormData((prev) => ({
       ...prev,
@@ -180,6 +181,7 @@ export function ContactSection() {
                 >
                   support@decoletech.com
                 </a>
+                <FollowUs />
               </CardContent>
             </Card>
 
