@@ -4,11 +4,11 @@ import nodemailer from "nodemailer";
 export async function POST(req: Request) {
   try {
     const { name, email, subject, message } = await req.json();
-
+    // console.log("data sent", name, email, subject, message);
     if (!name || !email || !subject || !message) {
       return NextResponse.json(
         { error: "Missing required fields" },
-        { status: 400 }
+        { status: 400 },
       );
     }
 
@@ -36,13 +36,13 @@ export async function POST(req: Request) {
         <p>${message}</p>
       `,
     });
-
+    // console.log("sender", sender);
     return NextResponse.json({ success: true });
   } catch (error) {
     console.error("Mail error:", error);
     return NextResponse.json(
       { error: "Email failed to send" },
-      { status: 500 }
+      { status: 500 },
     );
   }
 }

@@ -48,7 +48,7 @@
 //   );
 // }
 import { Button } from "@/components/ui/button";
-import { Mic, Camera, Lock, Sparkles } from "lucide-react";
+import { Mic, Camera, Lock, Sparkles, ArrowRight } from "lucide-react";
 import Image from "next/image";
 
 export function HeroSection() {
@@ -87,19 +87,19 @@ export function HeroSection() {
           </div>
 
           {/* Main heading */}
-          <h1 className='mb-6 text-center text-4xl font-bold tracking-tight text-white text-balance md:text-6xl lg:text-7xl'>
+          {/* <h1 className='mb-6 text-center text-4xl font-bold tracking-tight text-white text-balance md:text-6xl lg:text-7xl'>
             Journal Your Journey with God
-          </h1>
+          </h1> */}
 
           {/* Description */}
-          <p className='mb-8 text-center text-lg text-white/80 text-pretty md:text-xl leading-relaxed max-w-3xl mx-auto'>
+          {/* <p className='mb-8 text-center text-lg text-white/80 text-pretty md:text-xl leading-relaxed max-w-3xl mx-auto'>
             Capture your spiritual journey privately. Reflect on prayers,
             gratitude, and moments of joy, while safely recording your thoughts
             with voice and photos.
-          </p>
+          </p> */}
 
           {/* Feature highlights */}
-          <div className='mb-12 grid grid-cols-2 gap-4 md:grid-cols-4 max-w-3xl mx-auto'>
+          {/* <div className='mb-12 grid grid-cols-2 gap-4 md:grid-cols-4 max-w-3xl mx-auto'>
             <div className='flex flex-col items-center gap-2 rounded-xl bg-white/10 p-4 backdrop-blur-sm border border-white/20'>
               <div className='rounded-full bg-purple-500/20 p-3'>
                 <Mic className='h-6 w-6 text-purple-300' />
@@ -135,10 +135,10 @@ export function HeroSection() {
                 AI Chat Assistant
               </span>
             </div>
-          </div>
+          </div> */}
 
           {/* Scripture verse */}
-          <div className='mb-10 mx-auto max-w-2xl rounded-2xl bg-white/15 backdrop-blur-sm border border-white/20 p-6 md:p-8'>
+          {/* <div className='mb-10 mx-auto max-w-2xl rounded-2xl bg-white/15 backdrop-blur-sm border border-white/20 p-6 md:p-8'>
             <p className='mb-2 text-center text-sm font-bold uppercase tracking-wider text-slate-900'>
               Deuteronomy 6:12
             </p>
@@ -146,10 +146,10 @@ export function HeroSection() {
               &ldquo;Be careful that you do not forget the Lord, who brought you
               out of Egypt, out of the land of slavery.&rdquo;
             </p>
-          </div>
+          </div> */}
 
           {/* CTA Buttons */}
-          <div className='flex flex-col items-center gap-4 sm:flex-row sm:justify-center'>
+          {/* <div className='flex flex-col items-center gap-4 sm:flex-row sm:justify-center'>
             <Button
               size='lg'
               className='bg-white text-blue-950 hover:bg-white/90 font-semibold px-8'
@@ -165,7 +165,38 @@ export function HeroSection() {
             >
               <a href='#faq'>Browse FAQ</a>
             </Button>
+          </div> */}
+
+          {/* <section className='relative overflow-hidden border-b border-border'> */}
+          {/* <div className='absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-primary/5 via-background to-background' /> */}
+          {/* <div className='relative mx-auto max-w-6xl px-6 py-20 md:py-32'> */}
+          <div className='mx-auto max-w-3xl text-center'>
+            <div className='mb-6 inline-flex items-center gap-2 rounded-full border border-border bg-card px-4 py-1.5 text-sm text-muted-foreground'>
+              <Sparkles className='h-4 w-4 text-primary' />
+              <span>All features included with Premium</span>
+            </div>
+            <h1 className='mb-6 text-4xl font-bold tracking-tight text-white md:text-6xl text-balance'>
+              {/* <h1 className='mb-6 text-center text-4xl font-bold tracking-tight text-white text-balance md:text-6xl lg:text-7xl'> */}
+              Everything You Need for Your Spiritual Journey
+            </h1>
+            <p className='mx-auto mb-10 max-w-2xl text-lg text-muted-foreground text-pretty leading-relaxed md:text-xl'>
+              Praywrite helps you cultivate a meaningful prayer life with
+              powerful yet simple features — all while keeping your data private
+              and secure.
+            </p>
+            <div className='flex flex-col items-center justify-center gap-4 sm:flex-row'>
+              <Button size='lg' className='gap-2'>
+                {/* Start Free Trial */}
+                <a href='https://onelink.to/ysrt7g'>Start Free Trial</a>
+                <ArrowRight className='h-4 sw-4' />
+              </Button>
+              <Button size='lg' variant='outline'>
+                <a href='#pricing'>View Pricing</a>
+              </Button>
+            </div>
           </div>
+          {/* </div> */}
+          {/* </section> */}
         </div>
       </div>
     </section>

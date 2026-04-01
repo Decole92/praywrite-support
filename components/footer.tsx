@@ -100,7 +100,7 @@ export function Footer() {
             <ul className='space-y-3 text-sm'>
               <li>
                 <Link
-                  href='https://www.privacypolicies.com/live/13fd8174-9dcf-4fbe-9bc7-2fff05e0088a'
+                  href='/privacy'
                   className='text-muted-foreground hover:text-foreground transition-colors'
                 >
                   Privacy Policy
